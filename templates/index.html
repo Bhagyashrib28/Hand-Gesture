@@ -1,0 +1,111 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand Gesture Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body> 
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('features') }}">Features</a></li>
+            <li><a href="{{ url_for('gestures') }}">Gestures</a></li>
+            <li><a href="{{ url_for('demo') }}">Demo</a></li>
+            <li><a href="{{ url_for('live_testing') }}">Live Testing</a></li> 
+        </ul>
+    </nav>
+
+    <div id="hero">
+
+        <div id="hero1">
+            <h1>Welcome to HandSpeak</h1>
+            <p>AI-powered Hand Gesture Recognition System for Natural Human-Computer Interaction</p>
+        </div>
+
+        <section id="section">
+        
+            
+                <h2>What is HandSpeak?</h2>
+                <p>
+                HandSpeak is an innovative system that uses computer vision and AI to understand your hand gestures. 
+                Whether it's a wave, a peace sign, or a thumbs-up—HandSpeak can recognize it in real time 
+                and respond by speaking, controlling devices, or launching digital actions.
+                </p>
+
+                <h2>Use Hand Gestures</h2>
+                <ul>
+                    <li><strong>Touch-Free Interaction</strong> – Perfect for hygiene-sensitive environments.</li>
+                    <p>  Hand gesture recognition enables interaction with devices without physical contact. This is especially valuable in
+                        environments like hospitals, laboratories, or during pandemics, where hygiene and cleanliness are top priorities. 
+                        Users can control systems, navigate interfaces, or trigger actions by simply moving their hands in the air, thereby 
+                        reducing the risk of contamination or germ transfer.
+                    </p>
+
+                    <li><strong>Accessibility</strong> – Assistive tech for people with disabilities.</li>
+                    <p>
+                        Gesture-based systems provide an alternative communication method for individuals with physical or speech disabilities.
+                        For example, deaf or mute users can use sign language gestures that the system interprets into speech or text. People with 
+                        limited mobility can perform specific gestures to control devices, enhancing independence and reducing the need for physical
+                        interfaces like keyboards or remotes
+                    </p>
+
+                    <li><strong>Faster Control</strong> – Quick, intuitive commands without buttons.</li>
+                    <P>
+                        Gestures allow users to perform actions instantly with simple hand movements, bypassing the need for complex menus 
+                        or multiple steps. This leads to faster decision-making and task execution. For instance, a wave could start a presentation, 
+                        or a thumbs-up could confirm a choice, making gesture control more natural and efficient than traditional input methods.
+                    </P>
+
+                    <li><strong>Enhanced Immersion</strong> – Ideal for games and virtual environments.</li>
+                    <p>
+                        In gaming, virtual reality (VR), and augmented reality (AR), gesture recognition creates a more immersive and engaging experience. 
+                        Instead of pressing buttons on a controller, players can interact with the virtual world using their hands—grabbing, pointing, or 
+                        signaling—making the gameplay more realistic and dynamic. This technology bridges the gap between the real and virtual worlds.
+                    </p>
+
+                </ul>
+
+                <h2>Real-Life Use Cases</h2>
+                <ul>
+                    <li><strong>Smart TVs & Phones</strong> – Control with simple hand movements.</li>
+                    <p>
+                        Modern smart devices now support gesture-based control systems that allow users to perform actions like swiping through menus,
+                        adjusting volume, or accepting/rejecting calls using just their hand movements—without touching the screen. This enhances user
+                        experience by offering a contactless, intuitive interface that feels futuristic and efficient.
+                    </p>
+                    <li><strong>Gaming Systems</strong> – Used in VR/AR and devices like Xbox Kinect.</li>
+                    <P>
+                        Gesture recognition is widely used in gaming through platforms like Xbox Kinect, PlayStation Move, and VR headsets 
+                        (e.g., Oculus Quest, HTC Vive). Players can interact with the virtual world using real-time hand motions to swing, point, 
+                        grab, or throw, providing a more immersive and physical experience. It replaces traditional controllers, allowing natural 
+                        body movement to drive gameplay.
+                    </P>
+
+                    <li><strong>Automotive</strong> – Gesture-based music & navigation in luxury cars.</li>
+                    <p>
+                        Luxury vehicles from brands like BMW, Mercedes, and Audi have implemented gesture control for in-car systems.
+                        Drivers can perform gestures (like circular hand motions or swipes) to change songs, adjust volume, or answer calls—without
+                        taking their eyes off the road. This enhances driving safety and offers a high-tech feel to vehicle infotainment systems.
+                    </p>
+
+                    <li><strong>Medical Sector</strong> – Touchless interactions with medical devices.</li>
+                    <p>
+                        In operating rooms and clinics, gesture recognition allows surgeons and doctors to interact with digital displays, scans, or
+                        patient records without touching anything. This prevents contamination and maintains sterile conditions during surgeries or procedures. 
+                        It also improves workflow by letting medical professionals control systems hands-free while remaining focused on the patient.
+                    </p>
+                </ul>
+
+                <p>
+                    As gesture recognition evolves, it will redefine how humans interact with machines—making it seamless, smart, and intuitive.
+                </p>
+        
+        </section>
+</div>
+
+</body>
+</html>

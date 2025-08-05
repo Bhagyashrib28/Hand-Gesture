@@ -1,0 +1,107 @@
+<!-- features.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Features</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('features') }}">Features</a></li>
+            <li><a href="{{ url_for('gestures') }}">Gestures</a></li>
+            <li><a href="{{ url_for('demo') }}">Demo</a></li>
+            <li><a href="{{ url_for('live_testing') }}">Live Testing</a></li>                
+        </ul>
+    </nav>
+
+
+<section class="features" id="features">
+    <h1>Features</h1>
+
+    <div class="feature-container">
+        <div class="feature">
+          
+            <h2>Gesture To Text Conversion</h2>
+            <p>
+            This feature allows the system to interpret hand gestures and convert them into written text in real-time.
+            Using AI models like MediaPipe and computer vision techniques, the system recognizes specific hand signs and displays the corresponding message on the screen.
+            </p>
+        </div>
+
+        <div class="feature">
+           
+            <h2>Voice-to-Gesture Conversion</h2>
+            <p>In this module, the user can speak a command, and the system converts the voice input into a matching hand gesture using a database or AI mapping. </p>
+        </div>
+
+        <div class="feature">
+    
+            <h2>Real-time Gesture Recognition</h2>
+            <p>
+                With the help of computer vision frameworks like MediaPipe, the system continuously captures hand movements via webcam and processes them instantly. 
+                Each gesture is detected in real-time and immediately classified to trigger specific actions or text responses.
+            </p>
+        </div>
+
+        <div class="feature">
+           
+            <h2>Database Storage</h2>
+            <p>This feature supports a customizable experience by storing voice commands, text messages, and their corresponding hand gestures in a database (like MySQL). 
+                The system can learn and adapt over time, offering personalized mappings and enabling user-defined gesture-command combinations.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="applications">
+    <h1>Applications</h1>
+    <div class="feature-container">
+       
+        <div class="feature">
+          
+            <h2>Faster Interaction </h2>
+            <p> Hand gestures can be used as shortcuts to perform everyday tasks such as turning 
+                on/off lights, adjusting fan speed, or controlling smart TVs. This enables 
+                quick, intuitive, and contactless control, ideal for smart homes and offices.
+            </p>
+        </div>
+
+        <div class="feature">
+          
+            <h2>Helps Disabled Individuals </h2>
+            <p> Gesture recognition systems empower individuals with speech or hearing impairments
+                to communicate effectively through signs. The system translates their hand gestures 
+                into understandable language, ensuring inclusivity and independence.
+            </p>
+
+        </div>
+
+        <div class="feature">
+            
+            <h2>Education</h2>
+            <p> This technology can be used as a learning tool in schools and training centers 
+                to teach sign language interactively. Students can practice and receive feedback 
+                in real-time, making learning more engaging and effective.
+            </p>
+        </div>
+
+        <div class="feature">
+          
+            <h2>Healthcare & Assistive Tech</h2>
+            <p> In healthcare settings, especially for patients with mobility or communication challenges,
+                gesture recognition systems allow for touch-free control of medical devices or assistance tools.
+                This enhances safety, hygiene, and ease of use in clinical environments.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>

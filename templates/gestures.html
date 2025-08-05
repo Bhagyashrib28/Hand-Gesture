@@ -1,0 +1,103 @@
+<!-- gestures.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestures</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('features') }}">Features</a></li>
+            <li><a href="{{ url_for('gestures') }}">Gestures</a></li>
+            <li><a href="{{ url_for('demo') }}">Demo</a></li>
+            <li><a href="{{ url_for('live_testing') }}">Live Testing</a></li>                
+        </ul>
+    </nav>
+
+    <section class="gesture-section">
+        <h1>Predefined Hand Gestures</h1>
+        <p>Below are some predefined gestures used for recognition.</p>
+
+        <div class="gesture-container">
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/thumb.jpg') }}" alt="Thumbs Up - Approval">
+                <p>Thumbs Up - Approval</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/victory.jpg') }}" alt="Victory Sign - Peace or Two">
+                <p>Victory Sign - Peace or Two</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/smile.jpg') }}" alt="smile">
+                <p>smile</p>
+            </div>
+                <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/open hand.jpg') }}" alt="Open Palm - Stop or Hi">
+                <p>Open Palm - Stop or Hi</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/punch.jpg') }}" alt="Fist - Power or Punch">
+                <p>Fist - Power or Punch</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/goodluck.jpg') }}" alt="Goodluck">
+                <p>GoodLuck</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/point.jpg') }}" alt="Pointing Finger - Direction">
+                <p>Pointing Finger - Direction</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/call me.jpg') }}" alt="call me">
+                <p>call me</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/dislike.jpg') }}" alt="dislike">
+                <p>Dislike</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/okay.jpg') }}" alt="okay">
+                <p>okay</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/rock on.jpg') }}" alt="smile">
+                <p>Rock On</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/namaste.jpg') }}" alt="smile">
+                <p>Namaste</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/claps.jpg') }}" alt="smile">
+                <p>Claps</p>
+            </div>
+
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/handshake.jpg') }}" alt="smile">
+                <p>HandShake</p>
+            </div>
+            
+            <div class="gesture-card">
+                <img src="{{ url_for('static', filename='images/smile.jpg') }}" alt="smile">
+                <p>smile</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

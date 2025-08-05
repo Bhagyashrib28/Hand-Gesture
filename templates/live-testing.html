@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Testing - Hand Gesture Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+    <style>
+        body 
+        { text-align: center; font-family: Arial, sans-serif; 
+        }
+        #video-container { margin-top: 20px; }
+        button { padding: 10px 20px; font-size: 18px; margin: 10px; cursor: pointer; }
+        #videoFeed { width: 40%; border: 2px solid black; }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('features') }}">Features</a></li>
+            <li><a href="{{ url_for('gestures') }}">Gestures</a></li>
+            <li><a href="{{ url_for('demo') }}">Demo</a></li>
+            <li><a href="{{ url_for('live_testing') }}">Live Testing</a></li>                
+        </ul>
+    </nav>
+    <br><br>
+    <h1>Live Hand Gesture Recognition</h1>
+    <img id="videoFeed" src="{{ url_for('static', filename='images/handges.jpg') }}"  alt="Live Video Feed">
+
+    <div class="controls">
+        <button id="startBtn" onclick="startVideo()">Start</button>
+        <button id="stopBtn" onclick="stopVideo()">Stop</button>
+    </div>
+
+    <script>
+        function startVideo() {
+            document.getElementById("videoFeed").src = "/video_feed";
+        }
+
+        function stopVideo() {
+            fetch("/stop_video")  // Call the backend to stop video processing
+                .then(response => response.json())
+                .then(data => console.log(data.message));
+            document.getElementById("videoFeed").src ="{{ url_for('static', filename='images/handges.jpg') }}";
+        }
+    </script>
+
+</body>
+</html>

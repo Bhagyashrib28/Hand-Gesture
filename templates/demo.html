@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li><a href="{{ url_for('index') }}">Home</a></li>
+            <li><a href="{{ url_for('features') }}">Features</a></li>
+            <li><a href="{{ url_for('gestures') }}">Gestures</a></li>
+            <li><a href="{{ url_for('demo') }}">Demo</a></li>
+            <li><a href="{{ url_for('live_testing') }}">Live Testing</a></li>                
+        </ul>
+    </nav>
+    <section class="demo">
+        <h1>Demo & Working</h1>
+        
+        <div class="demo-container">
+           
+            <h2>How It's Working</h2>
+
+             <ul>
+                <li>Step 1: Vision Activation (Initialize Camera)</li>
+                <p>Starts the camera to capture real-time hand movements.</p>
+
+                <li>Step 2: Hand Tracker (Detect Hand & Finger Distance) </li>
+                <p>Perform a gesture in front of the camera.</p>
+
+                <li>Step 3: Recognition.</li>
+                <p> The system recognizes the gesture and translates it.</p>
+
+                <li>Step 3: Gesture Display </li>
+                <p> The result is displayed as text or triggers an action.</p>
+                <li>Step 4: Exit</li>
+                <p> Allows the user to stop, restart, or continue gesture recognition.</p>  
+            </ul>
+            <br>
+            <h2>Watch the demo video to understand how our Hand Gesture Recognition system functions.</h2>
+            <br><br>
+              <!-- Video Section -->
+            
+              <iframe width="700" height="400" 
+              src="https://www.youtube.com/embed/UhcRvGbow0s" 
+              title="YouTube video player" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+          </iframe>
+              
+            <br><br>
+              <!-- Start Button -->
+              <button class="start-btn" onclick="startRecognition()">Start Live Testing</button>
+        </div>
+    </section>
+
+    
+
+</body>
+</html>

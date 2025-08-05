@@ -1,0 +1,217 @@
+/* General Styles */
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+    background-image: url("../images/0b7763ae3f59cd6489a7d0a94b34cdd9.jpg");
+    background-size: cover;
+    background-attachment: scroll;
+    background-position:center;
+    background-repeat:repeat;
+}
+
+/* Navigation Bar */
+#navbar {
+    background-color:black; /* Baby Pink */
+    padding:1.5vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Hover Effect */
+nav ul li a:hover {
+    background-color: #4f4e58; /* Darker Pink */
+}
+
+
+
+#section {
+    text-align: left;
+    height: 100vh;
+    padding-left: 5vh;
+    margin-top: 5px;
+    width: 50%;
+    
+}
+
+#hero1{
+    text-align: center;
+    padding: 10vh;
+}
+
+.footer {
+    background:black;
+    color: white;
+    padding: 20px 10vw;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 20px;
+
+}
+
+.heading2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* gesture page */
+.gesture-section {
+    margin-top: 80px;
+    padding: 5vh;
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Gesture Container */
+.gesture-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+    padding:30px;
+
+}
+
+/* Gesture Card */
+.gesture-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.gesture-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.gesture-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .gesture-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Demo Page */
+.demo {
+    text-align: center;
+    padding:5vh;
+}
+
+.demo video {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.demo ul {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Start Button */
+.start-btn {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.start-btn:hover {
+    background-color: #45a049;
+}
+
+
+/* Features Page */
+.features {
+    
+    padding:5vh;
+    width:70%;
+
+}
+#features{
+    height: 55vh;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar a {
+        font-size: 16px;
+        padding: 8px;
+    }
+    
+    .demo video, .features img {
+        width: 100%;
+    }
+}
+button {
+    width:20%;
+    padding: 10px;
+    margin-top: 15px;
+    background:purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
